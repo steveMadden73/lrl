@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>БЕЗУРОНИСТЫЙ</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        #text {
+            font-size: 6em;
+            color: white;
+            animation: blink 0.5s infinite alternate,
+                       shake 0.2s infinite linear;
+        }
+
+        @keyframes blink {
+            from { color: white; }
+            to   { color: black; }
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-20px); }
+            50% { transform: translateX(20px); }
+            75% { transform: translateX(-20px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div id="text">LRL LRL ЛЫРЯЛ</div>
+</body>
+</html>
